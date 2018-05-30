@@ -29,7 +29,7 @@ class PingController extends TelegramBaseController {
                 error: 'sorry, wrong input',
                 validator: (message, callback) => {
 
-                    if (message.text=="hello") {
+                    if (message.text) {
                         callback(true, message.text) //you must pass the result also
                         return
                     }
